@@ -98,7 +98,7 @@ public class MyLinkedListTest {
         Integer[] expectedArrayAfterRemoval = {10, 20};
         assertArrayEquals(expectedArrayAfterRemoval, list.toArray());
 
-        list.removeFromFront();
+        list.   removeFromFront();
         Integer[] expectedArrayAfterFrontRemoval = {20};
         assertArrayEquals(expectedArrayAfterFrontRemoval, list.toArray());
     }

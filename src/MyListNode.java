@@ -24,9 +24,7 @@ public class MyListNode<T> {
         return next;
     }
 
-    public void setNext(MyListNode<T> next) {
-        this.next = next;
-    }
+    public void setNext(MyListNode<T> next) {this.next = next;}
 
     public MyListNode<T> getPrev() {
         return prev;

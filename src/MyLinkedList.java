@@ -87,7 +87,7 @@ public class MyLinkedList<T> {
     }
 
     public boolean contains(T data) {
-        MyListNode current = head;
+        MyListNode<T> current = head;
         for (int i = 0; i < size; i++) {
             if (current.getData() == data){
                 return true;
@@ -101,17 +101,14 @@ public class MyLinkedList<T> {
         if (size == 0) {
             return (T[]) new Object[0]; // Return an empty array if the list is empty
         }
-
         // Create an array of the same type as the first element's class
         T[] array = (T[]) Array.newInstance(head.getData().getClass(), size);
         MyListNode<T> current = head;
-
         // Populate the array with elements from the list
         for (int i = 0; i < size; i++) {
             array[i] = current.getData();
             current = current.getNext();
         }
-
         return array;
     }
 
